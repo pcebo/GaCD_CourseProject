@@ -21,7 +21,7 @@ This README explains the necessary start conditions that must be present for the
 Please note the script itself also contains some comments throughout to help the reader navigate through it.
 
 To begin, one must download and unzip the data from the following URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-Once unzipped, the test and train folders, along with the text files (i.e. features.txt, features_info.txt, activity_labels.txt) must be contained within the current R working dir. If they are not, one must set the working director appropriately with setwd(<dir name here>).
+Once unzipped, the test and train folders, along with the text files (i.e. features.txt, features_info.txt, activity_labels.txt) must be contained within the current R working dir. If they are not, one must set the working directory appropriately with setwd("dir name here").
 
 Note that the "Inertial Signals" folder was ignored as per David Hood's (TA's) recommendation - the folders in there are presumed to contain no average or sd values and are therefore not useful for our purposes.
 
