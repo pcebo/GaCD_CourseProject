@@ -4,11 +4,14 @@ GaCD_CourseProject
 Coursera Getting and Cleaning Data Course Project Repository
 
 SOME COLES NOTES, FOR THE MARKER:
+
 A) My tidy data set is "wide" - i.e. has 180 rows. THIS IS CONFIRMED BY THE TA (and the tidy data set definition) to be tidy - tall or skinny are both ok. See the discussion in the forum for confirmation.
 
 B) I used all the variables with std or mean in it. THIS AGAIN IS CONFIRMED TO BE (ONE OF) THE CORRECT APPROACHES BY THE TA.
 
 C) My activity descriptions are the original descriptions, minus the "()". THIS IS CONFIRMED IN THE DISCUSSION FORUMS AS (ONE OF) THE CORRECT APPROACHES THAT SHOULD REVEIVE FULL MARKS.
+
+If reading the tidy data set into R, remember to use "header=TRUE". Although not 100% necessary, it just makes it look nicer :)
 
 Thanks!
 Peter
