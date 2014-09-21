@@ -7,9 +7,11 @@ The raw data used can be downloaded from: https://d396qusza40orc.cloudfront.net/
 
 The two raw data sets (test and train) were combined into one data set. Meaningful variable and activity names were assigned. 
 
-Each variable chosen was then summarized by calculating the average across all raw observations for said variable, for a specific subject number (SubjectNumber) and activiy (ActivityNumber or ActivityDescription). The result is the tidy data set in this repo.   
+Each variable chosen was then summarized by calculating the average across all raw observations for said variable, for a specific subject number (SubjectNumber) and activiy (ActivityNumber or ActivityDescription). The result is the tidy data set in this repo. 
 
-Note that much of the below is taken from the raw data's code book / variable descriptions (features.txt) and modified/shortened slightly. A full list of the variables in the tidy data set follows for reference.
+Note the variables this "Mean" in the name are not really means and are not included. See README.md for details.
+
+It also should be noted that much of the below is taken from the raw data's code book / variable descriptions (features.txt) and modified/shortened slightly. A full list of the variables in the tidy data set follows for reference.
 
 The raw data come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
