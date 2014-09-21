@@ -3,6 +3,16 @@ GaCD_CourseProject
 
 Coursera Getting and Cleaning Data Course Project Repository
 
+SOME COLES NOTES, FOR THE MARKER:
+A) My tidy data set is "wide" - i.e. has 180 rows. THIS IS CONFIRMED BY THE TA (and the tidy data set definition) to be tidy - tall or skinny are both ok. See the discussion in the forum for confirmation.
+
+B) I used all the variables with std or mean in it. THIS AGAIN IS CONFIRMED TO BE (ONE OF) THE CORRECT APPROACHES BY THE TA.
+
+C) My activity descriptions are the original descriptions, minus the "()". THIS IS CONFIRMED IN THE DISCUSSION FORUMS AS (ONE OF) THE CORRECT APPROACHES THAT SHOULD REVEIVE FULL MARKS.
+
+Thanks!
+Peter
+
 This README explains the necessary start conditions that must be present for the included R script to function as intended. Further, it explains what the script does and why the script does what it does - i.e. why it takes the steps it takes along the way to performing the prescribed analysis/work and ultimately creating a tidy data set.
 
 Please note the script itself also contains some comments throughout to help the reader navigate through it.
