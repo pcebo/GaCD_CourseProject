@@ -5,6 +5,8 @@ Coursera Getting and Cleaning Data Course Project Repository
 
 This README explains the necessary start conditions that must be present for the included R script to function as intended. Further, it explains what the script does and why the script does what it does - i.e. why it takes the steps it takes along the way to performing the prescribed analysis/work and ultimately creating a tidy data set.
 
+Please note the script itself also contains some comments throughout to help the reader navigate through it.
+
 To begin, one must download and unzip the data from the following URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 Once unzipped, the test and train folders, along with the text files (i.e. features.txt, features_info.txt, activity_labels.txt) must be contained within the current R working dir. If they are not, one must set the working director appropriately with setwd(<dir name here>).
 
@@ -20,4 +22,8 @@ Note that the "Inertial Signals" folder was ignored as per David Hood's (TA's) r
 
 5) A second data set (dataSet2) is created using the index we obtain by using grep on the features data set - in which we searched for "mean" or "std" and Step #2 is completed.
 
-6) To complete step #3, we have assumed that the descriptions included with the original data (i.e. activity_labels.txt) are sufficient in detail. They are used to label activities properly.
+6) To complete step #3, we have assumed that the descriptions included with the original data (i.e. activity_labels.txt) are sufficient in detail. They are used to label activities properly. The colnames are set appropriately in each data set and then they are merged. This completes Step #3.
+
+7)Next, we are asked to give the variables (i.e. columns in our data set) appropriate names. We use the features.txt file as the source for these names, matching them up with the appropriate columns that remain from the original data set. We remove any instances of "()" but otherwise leave the names as they are. The shortforms used within are sufficiently clear and expanding them may create column names that are prohibitively long.
+
+8) Finally, the script creates the required tidy data set, with averages of each variable for each activity and each subject.
