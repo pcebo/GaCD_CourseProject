@@ -1,7 +1,17 @@
-Feature Selection 
+Code Book - Peter Cebo's Tidy Data Set
 =================
 
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+The variables selected for this data set are all average and standard deviation calculations from the study here:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+The raw data used can be downloaded from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+The two raw data sets (test and train) were combined into one data set. Meaningful variable and activity names were assigned. 
+
+Each variable chosen was then summarized by calculating the average across all raw observations for said variable, for a specific subject number (SubjectNumber) and activiy (ActivityNumber or ActivityDescription). The result is the tidy data set in this repo.   
+
+Note that much of the below is taken from the raw data's code book / variable descriptions (features.txt) and modified/shortened slightly. A full list of the variables in the tidy data set follows for reference.
+
+The raw data come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
@@ -28,22 +38,14 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-The set of variables that were estimated from these signals are: 
+The set of variables that were estimated (and used in this analysis) a from these signals are: 
 
 mean(): Mean value
 std(): Standard deviation
 meanFreq(): Weighted average of the frequency components to obtain a mean frequency
 
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
-
-The complete list of variables is below.
+The complete list of variables in the tidy data set is below.
 
 "SubjectNumber" 
 
