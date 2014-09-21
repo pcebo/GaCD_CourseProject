@@ -11,6 +11,8 @@ B) I used all the variables with std or mean in it. THIS AGAIN IS CONFIRMED TO B
 
 C) My activity descriptions are the original descriptions, minus the "()". THIS IS CONFIRMED IN THE DISCUSSION FORUMS AS (ONE OF) THE CORRECT APPROACHES THAT SHOULD REVEIVE FULL MARKS.
 
+D) Note the variables with "Mean" are not included. They are not actual means, but the angles between two means and thus should not be included AS CONFIRMED BY TA (wendel) here: https://class.coursera.org/getdata-007/forum/thread?thread_id=49
+
 If reading the tidy data set into R, remember to use "header=TRUE". Although not 100% necessary, it just makes it look nicer :)
 
 Thanks!
